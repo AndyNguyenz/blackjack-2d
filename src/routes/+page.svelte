@@ -9,8 +9,8 @@
     deck.shuffle(50);
     let interval;
     let setDif;
-
-    $:setDif = $difficulty;
+ 
+    
     let ran = 0;
     let card = deck.cards[ran]
 
@@ -24,7 +24,7 @@
     // });
 
     function updateDifficulty(e) {
-        setDif.set(e.target.value);
+        difficulty.set(e.target.value);
     }
 </script>
 

@@ -77,6 +77,7 @@ export function playerHit(game) {
             currentStage: 3,
             winner: result
         });
+        return result;
     } else {
         gameState.set({
             player: {
@@ -91,7 +92,9 @@ export function playerHit(game) {
             currentStage: 1,
             winner: null
         });
+        return -1;
     };
+    
     
 }
 
@@ -110,6 +113,7 @@ export function playerStand(game) {
         currentStage: 3,
         winner: result
     });
+    return result;
 }
 
 
